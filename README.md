@@ -13,7 +13,7 @@ Ce projet a pour but de démontrer, dans un environnement de test **isolé**, un
 ## Fonctionnalités
 
 * **Empoisonnement ARP** : usurpation simultanée de la passerelle, du faux site et de la victime.
-* **Spoof DNS** : redirection de certains noms de domaines vers un faux serveur (ex: faux PayPal).
+* **Spoof DNS** : redirection de certains noms de domaines vers un faux serveur
 * **Proxy HTTPS transparent** : déchiffrement du trafic via `mitmdump` (de la suite mitmproxy).
 * **Sniffer HTTP POST** : extraction automatique des données POST (mots de passe, tokens…).
 * **Script unique automatisé** : déploiement complet via `arp_tls.py`.
@@ -31,13 +31,13 @@ Ce lab repose sur un réseau local virtualisé composé de :
 
 * `arp_tls.py` : script principal lançant l’attaque combinée.
 * `post_sniffer.py` : script mitmproxy qui intercepte les requêtes POST.
-* `dnsSpoofed.txt` : mapping des domaines à rediriger (ex: `paypal.com:192.168.1.103`).
+* `dnsSpoofed.txt` : mapping des domaines à rediriger.
 * `posts.txt` : fichier généré contenant les requêtes POST interceptées.
 * `README.md` : ce fichier.
 
 ## Prérequis
 
-* Linux (Kali recommandé)
+* Linux
 * Python 3.x
 * Bibliothèques Python :
   `scapy`, `netfilterqueue`, `mitmproxy`
